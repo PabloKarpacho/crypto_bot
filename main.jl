@@ -87,3 +87,10 @@ limits!(ax2, tn[1], tn[end], 0, 1)
 fig
 
 save("./plots/usdt_vol.png", fig, px_per_unit = 3)
+
+
+# save usdt trading volume data
+
+using DelimitedFiles
+
+writedlm("./data/usdt_volume.csv", usdt_vol_norm);
